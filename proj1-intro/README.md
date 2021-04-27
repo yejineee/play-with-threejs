@@ -1,3 +1,8 @@
+![Apr-28-2021 00-51-55](https://user-images.githubusercontent.com/43772082/116273248-9165f300-a7bc-11eb-8abf-ede4c0e34452.gif)
+
+
+
+
 
 
 ## 🖍 Creating Scene
@@ -94,7 +99,7 @@ animate();
 
 setInterval로 해도 되지만, requestAnimationFrame이 더 많은 이점을 안겨준다. 가장 중요한 이점은 유저가 다른 브라우저 탭으로 이동했을 때, 멈추기 때문에 전력과 배터리 처리를 낭비하지 않는다는 것이다.
 
-## Animating the cube
+## 🖍 Animating the cube
 
 ```javascript
 function animate(){
@@ -105,5 +110,5 @@ function animate(){
 }
 ```
 
-이 코드느 frame을 매 초마다 60번씩 동작하게 한다.
+이 코드는 frame을 매 초마다 60번씩 동작하게 한다.
 frame이 그려질 때마다 큐브의 x축과 y축이 0.01씩 증가하면서, 회전하게 된다. 

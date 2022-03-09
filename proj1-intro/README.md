@@ -1,8 +1,13 @@
 ![Apr-28-2021 00-51-55](https://user-images.githubusercontent.com/43772082/116273248-9165f300-a7bc-11eb-8abf-ede4c0e34452.gif)
 
 
+threejs로 무언가를 보려면, 아래 세 가지 요소가 필요하다.
 
+1. scene
+2. camera
+3. renderer
 
+> render the scene with camera
 
 
 ## 🖍 Creating Scene
@@ -24,10 +29,10 @@ document.body.appendChild( renderer.domElement );
 PerspectiveCamera( fov : Number, aspect : Number, near : Number, far : Number )
 
 ```
-- fov : field of view
-    - 화면에 보여지는 extent of the scene 씬의 넓이...?
-    - 각도 (in degrees)
-- aspect ratio : 거의 항상 width / height 값
+- field of view (fov)
+    - 어떤 순간에 화면에 보여지는 씬의 범위 (정도)
+    - 값 : 각도 (in degrees)
+- aspect ratio : width / heigth 값
 - near : Camera frustum near plane.
 - far : Camera frustum far plane.
 

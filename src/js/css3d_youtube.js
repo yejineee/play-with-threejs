@@ -7,15 +7,16 @@ let camera, scene, renderer;
 let controls;
 
 function Element( id, x, y, z, ry ) {
+  const size = {width: '480px', height: '360px'};
 
   const div = document.createElement( 'div' );
-  div.style.width = '480px';
-  div.style.height = '360px';
+  div.style.width = size.width;
+  div.style.height = size.height;
   div.style.backgroundColor = '#000';
 
   const iframe = document.createElement( 'iframe' );
-  iframe.style.width = '480px';
-  iframe.style.height = '360px';
+  iframe.style.width = size.width;
+  iframe.style.height = size.height;
   iframe.style.border = '0px';
   iframe.src = [ 'https://www.youtube.com/embed/', id, '?rel=0' ].join( '' );
   div.appendChild( iframe );
@@ -41,7 +42,7 @@ function init() {
   const container = document.getElementById( 'container' );
 
   camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 5000 );
-  camera.position.set( 500, 350, 750 );
+  camera.position.set( 500, 350, 700 );
 
   scene = new THREE.Scene();
 
@@ -93,4 +94,3 @@ function animate() {
   renderer.render( scene, camera );
 
 }
-

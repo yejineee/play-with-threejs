@@ -45,9 +45,8 @@ function init() {
 
   scene = new THREE.Scene();
 
-  renderer = new CSS3DRenderer();
+  renderer = new CSS3DRenderer({element: container});
   renderer.setSize( window.innerWidth, window.innerHeight );
-  container.appendChild( renderer.domElement );
 
   const group = new THREE.Group();
   group.add( new Element( 'SJOz3qjfQXU', 0, 0, 240, 0 ) );
@@ -94,3 +93,4 @@ function animate() {
   renderer.render( scene, camera );
 
 }
+
